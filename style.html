@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Style Guide</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <script src="js/function.js"></script>
+
+  </head>
+
+
+    <body>
+        <header>
+            <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
+            <nav>
+                <ul class="not-menu">
+                    <li><a href="index.html">BACK TO PORTFOLIO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1>Style Guide</h1>
+            <h3>COLORS</h3>
+            <div class="color-container">
+                <div id="white"><h4>OFF WHITE #FFFCF0</h4><p>background color acting as base color for the site</p></div>
+                <div id="yellow"><h4>YELLOW #FFB525</h4><p>accent color for variety and visual heirarchy</p></div>
+                <div id="navy"><h4>DARK BLUE #262341</h4><p>main color used for buttons and other elements</p></div>
+                <div id="beige"><h4>BEIGE #DFD6BE</h4><p>secondary color for lower priority elements and borders</p></div>
+            </div>
+        </section>
+
+        <section>
+          <h3>TYPOGRAPHY</h3>
+
+            <p>My portfolio will use LATO, a simple san serif font that is not too distracting nor difficult to read on a screen.</p>
+
+            <div class="type">
+ 
+              <h1 class="sample-type">TITLE <span class='smaller'> LATO BOLD all caps</span></h1>
+              <p>Main titles of each page within the website will be of the largest bolded font size and in regular case.</p>
+
+              <h3 class="sample-type">HEADINGS <span class='smaller'>  LATO BOLD all caps</span></h3>
+                <p>Headings that help organize sections on a page will be bolded but at a smaller font size than titles and in all capitals. It will have increased tracking as well.</p>
+
+              <h4 class="sample-type">Subheadings <span class='smaller'>  LATO BOLD regular case</span></h4>
+              <p>Subheadings for categorization within sections will be bolded and in regular case. </p>
+
+              <p class="sample-type">Body Text <span class='smaller'> LATO REGULAR normal case <br><br></span> Body text for the majority of text content will be styled regularly and using regular casing.
+              </p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>DEFAULT BUTTONS</h3>
+            <div id="default-button-section">
+                <a href="#" class="button-circle">
+                    <img src="img/close.png" alt="arrow icon">
+                </a>
+                <a id="default-button" href="">DEFAULT BUTTON</a>
+            </div>
+            <code>&lt;a href="#" class="button-circle"&gt;&lt;img src="img/close.png" alt="arrow icon">&lt;/a&gt;</code>
+
+        </section>
+        <section id="in-text-link">
+            <h3>IN-TEXT LINKS</h3>
+            <a href="#">In-text Link</a><br><br>
+            <code>&lt;a href="#">In-text Link&lt;/a&gt;</code>
+
+        </section>
+
+        <section id="submit">
+            <h3>SUBMIT BUTTON</h3>
+            <input class="button-circle" type="image" src="img/send.png" alt="Submit"><br><br>
+            <code>&lt;input class="button-circle" type="image" src="img/send.png" alt="Submit"></code>
+        </section>
+        <section id="input-field">
+            <h3>TEXT INPUT FIELD</h3>
+            <input type="text" id="name" name="name" value="Name"><br>
+            <input type="text" id="subject" name="subject" value="Subject"><br><br>
+            <input type="text" id="message" name="message" value="Message"><br><br><br><br>
+            <code>&lt;input type="text" id="name" name="name" value="Name"></code><br>
+            <code>&lt;input type="text" id="subject" name="subject" value="Subject"></code><br>
+            <code>&lt;input type="text" id="message" name="message" value="Message"></code>
+        </section>
+        <section>
+            <h3>MAIN NAVIGATION</h3>
+            <div id="navigation">
+                <div>
+                    <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
+                </div>
+                <div>
+                    <ul id="not-menu">
+                        <li><a href="index.html#about">ABOUT ME</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="index.html#works">WORKS</a>
+                            <div class="dropdown-content">
+                                <a href="tg100.html">TG100</a>
+                                <a href="adobook.html">Adobook</a>
+                            </div>
+                        </li>
+                        <li><a href="index.html#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- hidden menu -->
+            <ul>
+                <li id="menu" class="dropdown">
+                    <a class="dropbtn">MENU</a>
+                    <div class="dropdown-content">
+                        <a href="index.html#about">ABOUT</a>
+                        <a href="index.html#works">WORKS</a>
+                        <a href="index.html#contact">CONTACT</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+
+    <script src="js/main.js"></script>
+    </body> 
+
+
+
+</html>

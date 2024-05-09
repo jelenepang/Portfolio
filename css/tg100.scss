@@ -1,0 +1,189 @@
+@import 'mixins';
+
+//general
+body {
+    @include body;
+}
+h1{
+    @include h1;
+}
+h3{
+    @include h3;
+}
+h4{
+    @include h4;
+}
+p{
+    @include p;
+}
+span{
+    @include span;
+}
+
+//nav bar and footer
+li{
+    @include li;
+    
+}
+a{
+    @include a;
+}
+
+//nav bar
+header {
+    @include header;
+}
+.nav-logo {
+    @include nav-logo;
+}
+//drop down
+.dropdown {
+    @include dropdown;
+}
+
+.dropdown-content {
+    @include dropdown-content;
+}
+
+.dropdown-content a {
+    @include dropdown-content-a;
+}
+
+.dropdown-content a:hover, a:focus {
+    @include dropdown-content-a-hover-focus;
+}
+
+.dropdown:hover .dropdown-content {
+    @include dropdown-hover-dropdown-content;
+}
+
+
+//footer
+footer{
+    @include footer;
+}
+#footer-container{
+    @include footer-container;
+}
+
+//////////////////
+.intro{
+    @include intro;
+}
+//intro gallery
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+  height: 20rem;
+  border-radius: 2rem;
+}
+//process
+#process{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-top: dashed $darkBlue .1rem;
+    border-bottom: dashed $darkBlue .1rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+} 
+.process1{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    align-items: center;
+    img{
+        padding: 1rem;
+        border-radius: 2rem;
+        height: 20rem;
+        border: solid $darkBlue .1rem;
+    }
+}
+.challenge1{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 4rem;
+    padding-bottom: 6rem;
+    border-bottom: dashed $darkBlue .1rem;
+    margin-bottom: 10rem;
+    img{
+        padding: 1.5rem;
+        border-radius: 1rem;
+        height: 36rem;
+        background-color: rgb(221, 215, 186);
+    }
+}
+.conclusion{
+    padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 1330px) {
+    @include footer-media-query;
+}
+@media screen and (max-width: 1290px) {
+    .intro p{
+        width: 70%;
+    }
+    .process1{
+        display: block;
+    }
+    .challenge1{
+        display: block;
+        img{
+            margin-bottom: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 945px) {
+    @include nav-media-query;
+    .intro{
+        margin-bottom: 5rem;
+    }
+    .intro p{
+        width: 100%;
+    }
+    div.scroll-container img {
+        padding: 10px;
+        height: 15rem;
+        border-radius: 2rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    #footer-container{
+        #footer-logo{
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #footer-links{
+            li{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .challenge1 img{
+        padding: .5rem;
+        width: 80%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 645px) {
+    .intro p{
+        width: 100%;
+    }
+    div.scroll-container img {
+        padding: 10px;
+        height: 10rem;
+        border-radius: 2rem;
+    }
+}
+
+
+
+

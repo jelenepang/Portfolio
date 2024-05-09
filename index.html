@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jalene's Portfolio</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <script src="js/function.js"></script>
+
+  </head>
+
+
+
+    <body>
+        <div id="hero">
+            <img src="img/hero1.png" alt="illustration of miniature room">
+        </div>
+
+        <header>
+            <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
+            <nav>
+                <ul class="not-menu">
+                    <li><a href="index.html#about">ABOUT ME</a></li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="index.html#works">WORKS</a>
+                        <div class="dropdown-content">
+                            <a href="adobook.html">Adobook</a>
+                            <a href="tg100.html">TG100</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                <!-- hidden menu -->
+                    <li id="menu" class="dropdown">
+                        <a class="dropbtn">MENU</a>
+                        <div class="dropdown-content">
+                            <a href="index.html#about">ABOUT</a>
+                            <a href="index.html#works">WORKS</a>
+                            <a href="index.html#contact">CONTACT</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="landing">
+            <div id="landing-content">
+                <div></div>
+                <div></div>
+                <div>
+                    <h3>UI/UX DESIGNER</h3>
+
+                    <h1>JALENE<br>PANG</h1>
+                    <p>Hello! I am Jalene, an aspiring but coffee-dependent UI/UX designer and illustration enthusiast.</p>
+                    
+                        <div>
+                            <img id="scroll-img" src="img/scroll.png" alt="circular animated sroll down text">
+                            <a id="down-arrow" href="#about"><img  src="img/arrow.png" alt="down arrow icon"></a>
+                        </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about">
+            <div id="about-content">
+                <h3>WHAT I LIKE TO THINK</h3>
+                <h4>(things i'm good at)</h4>
+                    <div id="pie-container">
+                        <div class="pies">
+                            <img src="img/pie1.png" alt="7/8 pie chart">
+                            <p>UI DESIGN</p>
+                        </div>
+                        <div class="pies">
+                            <img src="img/pie2.png" alt="6/8 pie chart">
+                            <p>UX DESIGN</p>
+                        </div>
+                        <div class="pies">
+                            <img src="img/pie3.png" alt="5/8 pie chart">
+                            <p>ANIMATION</p>
+                        </div>
+                        <div class="pies">
+                            <img src="img/pie1.png" alt="7/8 pie chart">
+                            <p>ILLUSTRATION</p>
+                        </div>
+                    </div>
+                <p>As a dedicated student of Simon Fraser University's Interactive Arts and Technology program, I excel in creative thinking and iterative design processes. My passion encompasses diverse areas of visual design, with a particular focus on creating engaging and user-friendly web interface experiences.</p>
+                <h3>WHAT I THINK I LIKE</h3>
+                <h4>(things i enjoy)</h4>
+                <p>Beyond my professional interests, I am also enthusiastic about other aspects in my life. Having previously played badminton competitively, it continues to serve as both a source of stress-relief and recreation with friends. At other times, you'll find me crocheting (and all kinds of crafting), often retreated to a cozy corner for some creative downtime.</p>
+            </div>    
+        </section>
+
+        <section id="works">
+            <div id="works-content">
+                <h3>WHAT I HAVE DONE</h3>
+                <h4>(portfolio things)</h4>      
+        
+                <div id="works-container">
+                     <div class="works"><a href="adobook.html"><img src="img/adobook/landing.png" alt="Adobook background cooking image"></a></div>
+                    <div class="works"><a href="tg100.html" ><img src="img/tg100/landing1.png" alt="Tennis Goat 100 promo video screenshot"></a></div>
+                    <div class="works"><a href="">** will add in the future</a></div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
+                <div id="talk-container">
+                    <img id="talk-image" src="img/talk.png" alt="">
+                    <h1>GET IN <br>TOUCH!</h1>
+                    <div id="social-media-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100007122284882"><img src="img/fb.png" alt="round yellow Facebook logo icon"></a>
+                        <a href="https://www.instagram.com/jalenepang/"><img src="img/ig.png" alt="round yellow Instagram logo icon"></a>
+                        <a href="https://www.linkedin.com/in/jalene-pang-01989b204/"><img src="img/li.png" alt="round yellow LinkedIn logo icon"></a>
+                    </div>
+                </div>
+                <div>
+                    <!-- actual submission not set up yet -->
+                    <!-- <form> -->
+                        <input type="text" id="name" name="name" value="Name"><br>
+                        <input type="text" id="subject" name="subject" value="Subject"><br><br>
+                        <input type="text" id="message" name="message" value="Message"><br><br>
+                        <input id="openPopUp" onclick="openPopUp()" type="image" src="img/send.png" alt="Submit">
+                    <!-- </form>  -->
+                </div>
+            </div>
+            <!-- <button id="openPopUp" onclick="openPopUp()">Click me</button> -->
+        </section>
+        <!-- <h3>WHAT HAVE I DONE</h3>
+        <h4>(for consistency's sake)</h4> -->
+
+        <div id="popup">       
+            <h3>MESSAGE SENT!</h3>
+            <p>I've received your message and will respond as promptly as I can. Thank you for reaching out! </p>
+            <a id="popup-close"><img src="img/close.png" alt="Round close x button"></a>
+        </div>
+        <div id="overlay"></div>
+        <footer>
+            <div id="footer-container">
+                <div id="footer-logo">
+                    <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
+                </div>
+                <ul id="footer-links">
+                    <li><a href="https://github.com/jelenepang/IAT339_P03">GIT REPO</a></li>
+                    <li><a href="style.html">STYLE GUIDE</a></li>
+                    <li><a href="citations.html">CITATIONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </footer>
+    <script src="js/main.js"></script>
+    </body> 
+
+
+
+</html>

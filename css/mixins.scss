@@ -1,0 +1,232 @@
+// mixins.scss
+
+$bgYellow: #FFFCF0;
+$darkBlue: #262341;
+$yellow: #FFB525;
+
+@mixin body{
+    background-color: $bgYellow;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 10vw;
+    padding-top: 3vw;
+}
+@mixin h1{
+    margin: 0;
+    margin-top: 2rem;
+    color: $darkBlue;
+    font-weight:9000;
+    font-size: 4rem;
+    letter-spacing: -.2rem;
+    line-height: 4rem;
+}
+@mixin h3{
+    letter-spacing: .5rem;
+    color: $yellow;
+    font-size: 1.3rem;
+}
+@mixin h4{
+    color: $darkBlue;
+}
+@mixin p{
+    color: $darkBlue;
+    margin-top: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+@mixin li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 4vw;
+    text-decoration: none;
+    color: $darkBlue;
+    letter-spacing: .5rem;
+}
+@mixin a{
+    text-decoration: none;    
+    font-weight: 600;
+    color: $darkBlue;
+    font-size: .8rem;
+
+    //invisible hover
+    padding: 1rem;
+    border-radius: 5rem;
+    transition: .5s;
+
+    &:hover{
+        padding: 1rem;
+        border-radius: 5rem;
+    }
+}
+@mixin span{
+    color: $yellow;
+}
+
+//header
+@mixin header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 8vw;
+    a{
+        border: solid $yellow .1rem;
+        &:hover, &:focus{
+            background-color: $yellow;
+        }
+    }
+}
+//navigation
+@mixin nav-logo{
+    border: none;
+    margin-right: auto;
+    font-size: 1.5em;
+    width: 4rem;
+    img{
+        width: inherit;
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}
+@mixin dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+@mixin dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+@mixin dropdown-content-a {
+    color: $darkBlue;
+    text-decoration: none;
+    display: block;
+    letter-spacing: normal;
+    border: solid $yellow .1rem;
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+}
+
+@mixin dropdown-content-a-hover-focus {
+    background-color: $yellow;
+}
+
+@mixin dropdown-hover-dropdown-content {
+    display: block;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+//footer
+@mixin footer{
+    margin: 0;
+    margin-top: 4rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 100%;
+
+    //body padding
+    margin-left: -10vw;
+    margin-bottom: -10vw;
+    background-color: $yellow;
+}
+@mixin footer-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    align-items: center;
+    
+    #footer-links{
+        text-align: right;
+        a:hover, a:focus{
+            background-color: $bgYellow;
+        }
+    }
+}
+
+/////for project pages
+@mixin intro{
+    margin-bottom: 10rem;
+    p{
+        width: 50%;
+    }
+}
+//imgs
+@mixin three-img{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 1rem;
+    img{
+        width: 100%;
+    }
+}
+@mixin single-img{
+    img{
+        width: 100%;
+    }
+}
+@mixin two-img-v{
+    display: grid;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    row-gap: 1rem;
+    img{
+        width: 100%;
+    }
+}
+
+#menu{
+    display: none;
+}
+
+@mixin nav-media-query{
+    .not-menu li:not(#menu) {
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .dropbtn img {
+        margin: 0;
+        width: 2rem;
+        height: auto;
+        vertical-align: middle;
+    }
+    .dropdown-content a{
+        background-color: $bgYellow;
+    }
+
+    #about{
+        width: 100%;
+    }
+    #landing{
+        margin-bottom: 8rem;
+    }
+}
+@mixin footer-media-query{
+    #footer-container{
+        justify-content: center;
+        grid-template-columns: auto;
+        #footer-logo{
+            margin-top: 2rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #footer-links{
+            text-align: center;
+            li{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+
