@@ -22,6 +22,9 @@ li{
     @include li;
     
 }
+ul{
+    @include ul;
+}
 a{
     @include a;
 }
@@ -183,7 +186,8 @@ header {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 3rem;
 }
-input{
+input, textarea{
+    font-family: "Josefin Sans", sans-serif;
     width: 70%;
     padding: 1rem;
     border-radius: 2rem;
@@ -191,6 +195,22 @@ input{
     margin-bottom: .5rem;
     background-color: $bgYellow;
     transition: .5s;
+    &:hover, &:focus{
+        background-color: $yellow;
+    }
+}
+button[type="submit"]{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $bgYellow;
+    transition: .5s;
+    border: solid $darkBlue .1rem;
+    img{
+        width: 2rem;
+        height: 2rem;
+        // background-color: red;
+    }
     &:hover, &:focus{
         background-color: $yellow;
     }

@@ -4,7 +4,7 @@
 
 body {
   background-color: #FFFCF0;
-  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 10vw;
   padding-top: 3vw;
@@ -49,7 +49,6 @@ span {
 li {
   list-style: none;
   display: inline-block;
-  padding-left: 4vw;
   text-decoration: none;
   color: #262341;
   letter-spacing: 0.5rem;

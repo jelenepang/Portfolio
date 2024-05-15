@@ -7,7 +7,8 @@
     <title>Jalene's Portfolio</title>
 
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"> -->
+    <link href= "https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/function.js"></script>
 
   </head>
@@ -119,12 +120,14 @@
                 </div>
                 <div>
                     <!-- actual submission not set up yet -->
-                    <!-- <form> -->
-                        <input type="text" id="name" name="name" value="Name"><br>
-                        <input type="text" id="subject" name="subject" value="Subject"><br><br>
-                        <input type="text" id="message" name="message" value="Message"><br><br>
-                        <input id="openPopUp" onclick="openPopUp()" type="image" src="img/send.png" alt="Submit">
-                    <!-- </form>  -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                        <input type="hidden" name="access_key" value="0ab1ce21-f046-49a4-8f3f-ce60c2a5d9df">
+                        <input type="text" id="name" name="name" placeholder="Name" required><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+                        <textarea type="text" id="message" name="message" placeholder="Message" required></textarea><br><br>
+                        <!-- <input id="openPopUp"  type="image" src="img/send.png" alt="Submit" onclick="openPopUp()"> -->
+                        <button type="submit"><img src="img/send.png"></button>
+                    </form> 
                 </div>
             </div>
             <!-- <button id="openPopUp" onclick="openPopUp()">Click me</button> -->
@@ -144,9 +147,10 @@
                     <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="JP circular logo design"></a>
                 </div>
                 <ul id="footer-links">
-                    <li><a href="https://github.com/jelenepang/IAT339_P03">GIT REPO</a></li>
-                    <li><a href="style.html">STYLE GUIDE</a></li>
-                    <li><a href="citations.html">CITATIONS</a></li>
+                    <!-- <li><a href="https://github.com/jelenepang/IAT339_P03">GIT REPO</a></li> -->
+                    <li><a href="https://jelenepang.github.io/Portfolio/">RESUME</a></li>
+                    <!-- <li><a href="style.html">STYLE GUIDE</a></li> -->
+                    <!-- <li><a href="citations.html">CITATIONS</a></li> -->
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
