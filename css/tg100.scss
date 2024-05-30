@@ -83,12 +83,16 @@ div.scroll-container img {
   border-radius: 2rem;
 }
 //process
+
+.progress-bar{
+    @include progress-bar;
+}
+.active-progress{
+    @include active-progress;
+}
+
 #process{
-    margin-top: 10rem;
     margin-bottom: 10rem;
-    border-top: dashed $darkBlue .1rem;
-    border-bottom: dashed $darkBlue .1rem;
-    padding-top: 6rem;
     padding-bottom: 6rem;
 } 
 .process1{

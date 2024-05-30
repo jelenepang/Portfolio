@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 10vw;
   padding-top: 3vw;
+  overflow-x: hidden;
 }
 
 h1 {

@@ -11,6 +11,7 @@ $yellow: #FFB525;
     margin: 0;
     padding: 10vw;
     padding-top: 3vw;
+    overflow-x: hidden;
 }
 @mixin h1{
     margin: 0;
@@ -125,6 +126,25 @@ $yellow: #FFB525;
     border-radius: 1rem;
 }
 
+@mixin progress-bar{
+    // padding: 0;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        padding: .5rem;
+        background-color: $yellow;
+        border-radius: 4rem;
+    li{
+        padding: 1rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        border-radius: 4rem;
+    }
+}
+@mixin active-progress{
+    // border: solid $yellow .1rem;
+    background-color: #FFFCF0;
+}
+
 
 
 //footer
@@ -163,6 +183,7 @@ $yellow: #FFB525;
         width: 50%;
     }
 }
+
 //imgs
 @mixin three-img{
     display: grid;

@@ -1,4 +1,5 @@
 @import 'mixins';
+//general
 body {
     @include body;
 }
@@ -119,21 +120,22 @@ header {
 }
 #pie-container{
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    width: inherit;
+    grid-template-columns: auto auto auto auto;
     margin-top: 4rem;
-    margin-bottom: 0;
-    p{
-        text-align: center;
-        margin: 0;
-        margin-top: .5rem;
-        line-height: normal;
-    }
+    margin-bottom: 0;    
 }
-.pies{
+.pies{  
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    margin-left: auto;
     margin-right: auto;
     img{
         height: 4rem;
+    }
+    p{
+        text-align: center;
+        margin-top: .4rem;
     }
 
 }
@@ -246,6 +248,10 @@ button[type="submit"]{
         float: right;
     }
     #social-media-icons{
+        display: grid;
+        grid-template-columns: auto 4rem;
+        align-items: center;
+        text-align: right;
         margin-top: 14rem;
         a{
             padding: 0;
